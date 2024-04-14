@@ -1,10 +1,13 @@
 import './App.css'
+import './layout.scss'
 
 function App() {
 
   return (
-    <>  <h1>hello world</h1>
-    
+    <>  
+      <div className="layout">
+       hello world
+      </div>
     </>
   
   )

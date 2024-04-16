@@ -1,3 +1,4 @@
+@import "../..//responsive.scss";
 .homePage{
     display: flex;
     height: 100%;
@@ -11,16 +12,35 @@
             justify-content: center;
             gap: 50px;
             height:80%;
-                .title{
 
+            @include md{
+                padding: 0px;
+            }
+
+            @include sm{
+                justify-content: flex-start;
+            }
+                .title{
+                    font-size: 64px;
                     color: #092a34;
+                    @include lg{
+                        font-size: 48px;
+                    }
                 }
                 .boxes{
                     justify-content:space-between;
                     display: flex;
                     flex-direction: row;
+
+                    @include sm{
+                        display: none;
+                    }
                 h1{
                     font-size: 36px;
+
+                    @include lg{
+                        font-size: 48px;
+                    }
                 }    
                 h2{
                     font-size: 20px;
@@ -35,6 +55,10 @@
     .imgContainer{
         flex: 2;
         background-color: rgb(255, 255, 255);
+        
+        @include md{
+            display: none;
+        }
         .imgg{
             background-color: rgb(255, 255, 255);
 
@@ -42,6 +66,9 @@
             display: flex;
             font-display: column;
             height: 100%;
+        }
+        @include lg{
+            width: 105%;
         }
     }
     }

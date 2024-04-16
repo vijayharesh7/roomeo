@@ -1,0 +1,48 @@
+.homePage{
+    display: flex;
+    height: 100%;
+
+    .textContainer{
+        flex: 3;
+        .wrapper{
+            padding-right: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 50px;
+            height:80%;
+                .title{
+
+                    color: #092a34;
+                }
+                .boxes{
+                    justify-content:space-between;
+                    display: flex;
+                    flex-direction: row;
+                h1{
+                    font-size: 36px;
+                }    
+                h2{
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+            }
+        }
+       
+      
+    }
+    
+    .imgContainer{
+        flex: 2;
+        background-color: rgb(255, 255, 255);
+        .imgg{
+            background-color: rgb(255, 255, 255);
+
+            max-width: 100%;
+            display: flex;
+            font-display: column;
+            height: 100%;
+        }
+    }
+    }
+

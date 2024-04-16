@@ -1,14 +1,24 @@
 import './App.css'
 import Navbar from './components/navbar/navbar'
 import './layout.scss'
+import HomePage from './routes/homePage/homePage'
+
 
 function App() {
 
   return (
     <>  
       <div className="layout">
-        <Navbar/>
-      </div>
+
+        <div className="Navbar">
+          <Navbar/>
+        </div>
+
+        <div className='content'>
+          <HomePage/>
+        </div>
+
+        </div>
     </>
   
   )

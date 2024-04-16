@@ -50,11 +50,10 @@ nav{
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        background-color: #ff9999;
         height: 100%;
 
         @include md{
-            background-color: transparent;
+            background-color: rgba(163, 24, 24, 0.68);
         }
 
         a{
@@ -63,7 +62,12 @@ nav{
         }
 
         .register{
-            background-color: #fff099;
+            background-color: #0d3d4a;
+            color: white;
+        }
+
+        .register:hover {
+            background-color: #0f5f73;
         }
 
         .menuIcon{
